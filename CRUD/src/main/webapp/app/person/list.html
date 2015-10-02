@@ -1,0 +1,29 @@
+
+<section>
+	
+	
+	<label>Nome</label>
+	<input type="text" ng-change="cnt.vm.filter()" ng-model="cnt.vm.serachValue">
+	<input type="button" class=" button" ng-click="cnt.vm.goForm()" value="Novo">
+
+
+
+<div class="table-responsive">
+  <table class="table">
+ <tr>
+    <td>ID</td>
+    <td>Nome</td> 
+    <td>Ação</td>
+  </tr>
+  <tr ng-repeat="item in cnt.vm.persons">
+    <td>{{item.id}}</td>
+    <td>{{item.name}}</td> 
+    <td><a class="btn btn-link" ng-click="cnt.vm.edit(item)">Editar</a> | <a  class="btn btn-link" ng-click="cnt.vm.remove(item)">Remover</a></td>
+  </tr>
+</table>
+
+</table>
+</div>
+
+
+</section>

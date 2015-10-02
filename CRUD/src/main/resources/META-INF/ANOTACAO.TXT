@@ -1,0 +1,27 @@
+	<!-- -------------------------- NO SQL --- -->
+
+		<!-- <properties> -->
+		<!-- <property name="hibernate.transaction.jta.platform" -->
+		<!-- value="org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform" 
+			/> -->
+		<!-- <property name="hibernate.ogm.datastore.provider" value="infinispan" 
+			/> -->
+		<!-- <property name="hibernate.ogm.datastore.provider" value="MONGODB" 
+			/> -->
+		<!-- <property name="hibernate.ogm.mongodb.host" value="127.0.0.1" /> -->
+		<!-- <property name="hibernate.ogm.mongodb.port" value="27017" /> -->
+		<!-- <property name="hibernate.ogm.datastore.database" value="ht" /> -->
+		<!-- <property name="jboss.as.jpa.adapterModule" value="org.jboss.as.jpa.hibernate:4" 
+			/> -->
+
+		<!-- <property name="hibernate.ogm.datastore.create_database" -->
+		<!-- value="true" /> -->
+		<!-- <property name="hibernate.ogm.mongodb.username" value="denner" /> -->
+		<!-- <property name="hibernate.ogm.mongodb.password" value="denner" /> -->
+
+		<!-- <property name="jboss.as.jpa.providerModule" value="org.hibernate:ogm" 
+			/> -->
+		<!-- <property name="jboss.as.jpa.adapterModule" value="org.jboss.as.jpa.hibernate:4" 
+			/> -->
+
+		<!-- </properties> -->

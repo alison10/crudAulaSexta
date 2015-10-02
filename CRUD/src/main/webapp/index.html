@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="crud">
+<head>
+<base href="">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> CRUD </title>
+    
+ <link rel="stylesheet" type="text/css" href="resources/css/external/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/external/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/external/bootstrap/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/external/bootstrap/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/external/bootstrap/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/external/bootstrap/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/external/bootstrap/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/external/bootstrap/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/external/bootstrap/styles.css" />
+
+</head>
+<body role="document">
+
+<div class="container-fluid">
+
+    <!-- Main content -->
+	<div class="">
+        <div ng-view></div>
+    </div>
+
+      </div>
+    
+    <!-- Angulajs -->
+    <script src="resources/js/external/angular/angular.min.js"></script>
+    <script src="resources/js/external/angular/angular-route.min.js"></script>
+    
+    <!-- App Configurations -->
+    <script src="app/app.js"></script>
+    
+    
+    <script src="app/person/personConfig.js"></script>
+    <script src="app/person/personListController.js"></script>
+    <script src="app/person/personFormController.js"></script>
+    <script src="app/person/personServices.js"></script>
+    
+</body>
+</html>
