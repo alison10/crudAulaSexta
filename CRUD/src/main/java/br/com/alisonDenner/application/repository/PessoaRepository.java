@@ -15,12 +15,12 @@ public class PessoaRepository {
 	private EntityManager manager;
 
 	public List<Produto> loadAll() {
-		return manager.createQuery("SELECT c FROM Pessoa c").getResultList();
+		return manager.createQuery("SELECT c FROM Produto c").getResultList();
 	}
 
 	public List<Produto> loadLikeBy(String name) {
 		Query query = manager
-				.createQuery("SELECT c FROM Pessoa c WHERE LOWER(c.name) LIKE :name");
+				.createQuery("SELECT c FROM Produto c WHERE LOWER(c.name) LIKE :name");
 		query.setParameter("name", "%" + name.toLowerCase() + "%");
 		return query.getResultList();
 	}
