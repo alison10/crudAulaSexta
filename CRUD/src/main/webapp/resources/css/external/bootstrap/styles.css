@@ -1,0 +1,76 @@
+﻿
+
+.gts-border {
+    padding-top: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    border: 1px solid #9f9f9f;
+}
+
+.gts-bg-gray {
+    font-weight: bold;
+    color: black;
+    background-color: #acacac;
+    cursor: pointer;
+}
+
+.gts-bg-blue {
+    font-weight: bold;
+    color: white;
+    background-color: #6249ff;
+    cursor: pointer;
+}
+
+.gts-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.gts-height-div-100 {
+    height: 100px;
+}
+
+.gts-height-div-150 {
+    height: 150px;
+}
+
+.gts-height-div-200 {
+    height: 200px;
+}
+
+.gts-height-div-250 {
+    height: 250px;
+}
+
+/* ######  MODAL ###### */
+.gts-modal {
+            background-color: rgba(0, 0, 0, 0.70);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+        }
+            .gts-modal > div.gts-modal-panel {
+                min-width: 600px;
+                background-color: white;
+                display: inline-block;
+
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-left: 25px;
+                padding-right: 25px;
+
+                margin-top: 5%;
+                margin-left: 25%;
+
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+             
+                box-shadow: 0px 4px 12px black;
+                -webkit-box-shadow: 0px 4px 12px black;
+                -moz-box-shadow: 0px 4px 12px black;
+            }

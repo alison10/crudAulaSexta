@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body {
+	font-family: 'Open Sans';
+}
+
+.navbar-shadow {
+	box-shadow: 0px 2px 10px rgba(50, 50, 50, 0.7);
+}
+
+#footer {
+	padding: 10px 0px 0px 0px;
+	margin-top: 30px;
+	border-top: 1px solid #ccc;
+	text-align: center;
+	font-size: 12px;
+	color: #888;
+}
+
+#companyBar {
+
+	padding: 0px 0px 20px 0px;
+	border-bottom: 1px solid #ccc;
+}
+
+.miniContent {
+	margin: 30px 0px 0px 0px;
+}
+
+.project {
+
+	padding: 10px 20px 10px 20px;
+	margin: 0px 20px 20px 0px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 160px;
+	text-align: center;
+}
+
+.project img {
+
+	margin: 0px 0px 5px 0px;
+}
+
+.project .name {
+
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0px 0px 10px 0px;
+}
+
+#addProject {
+
+	cursor: pointer;
+}
+
+#planList {
+	margin-top: 30px;
+}
+
+
+#archiveList {
+	margin: 30px 0px 0px 0px;
+}
+
+#userList {
+	width: 175px;
+	text-align: left;
+}
+
+.projectUser {
+	float: left;
+	margin: 0px 3px 3px 0px;
+}
+
+.item {
+
+	padding: 10px 20px 10px 20px;
+	margin: 0px 20px 20px 0px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 160px;
+	text-align: center;
+}
+
+.item img {
+
+	margin: 0px 0px 5px 0px;
+}
+
+.item .name {
+
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0px 0px 10px 0px;
+}
+
+#addItem {
+	cursor: pointer;
+}

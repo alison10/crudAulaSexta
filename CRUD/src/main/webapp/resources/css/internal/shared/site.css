@@ -1,0 +1,56 @@
+select {
+	padding: 0px !important;
+}
+
+footer {
+	margin-bottom: 0px;
+	bottom: 0px;
+	position: relative;
+}
+
+h3 {
+	font-weight: normal !important;
+}
+
+/*.container {
+	margin-top: 30px;
+}*/
+
+body {
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+	font: normal 112.5%/1.65 serif !important;
+}
+
+.row {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	max-width: none !important;
+}
+
+.breadcrumbs {
+	background-color: transparent;
+	border: 0px;
+}
+
+.error {
+	color: red !important;
+}
+
+.list-content>a>div:hover {
+	background-color: #F5F5F5;
+}
+
+.dataTables_filter>label>input {
+	height: auto !important;
+}
+
+.dataTables_length>label>select {
+	height: auto !important;
+}
