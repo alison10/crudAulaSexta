@@ -7,18 +7,18 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.transaction.Transactional;
 
-import br.com.alisonDenner.application.model.Pessoa;
+import br.com.alisonDenner.application.model.Produto;
 
 public class PessoaRepository {
 
 	@PersistenceContext(name = "default")
 	private EntityManager manager;
 
-	public List<Pessoa> loadAll() {
+	public List<Produto> loadAll() {
 		return manager.createQuery("SELECT c FROM Pessoa c").getResultList();
 	}
 
-	public List<Pessoa> loadLikeBy(String name) {
+	public List<Produto> loadLikeBy(String name) {
 		Query query = manager
 				.createQuery("SELECT c FROM Pessoa c WHERE LOWER(c.name) LIKE :name");
 		query.setParameter("name", "%" + name.toLowerCase() + "%");
@@ -26,7 +26,7 @@ public class PessoaRepository {
 	}
 
 	@Transactional
-	public void save(Pessoa pessoa) {
+	public void save(Produto pessoa) {
 		Object identifier = manager.getEntityManagerFactory()
 				.getPersistenceUnitUtil().getIdentifier(pessoa);
 
@@ -38,10 +38,10 @@ public class PessoaRepository {
 	}
 
 	@Transactional
-	public void delete(Pessoa pessoa) {
+	public void delete(Produto pessoa) {
 		Object identifier = manager.getEntityManagerFactory()
 				.getPersistenceUnitUtil().getIdentifier(pessoa);
-		Pessoa entity = manager.find(Pessoa.class, identifier);
+		Produto entity = manager.find(Produto.class, identifier);
 		manager.remove(entity);
 	}
 

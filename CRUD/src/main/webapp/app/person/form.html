@@ -2,12 +2,25 @@
 <section>
 	<div class="row-fluid">
 		<form name="form" ng-submit="cnt.vm.submit()">
-			<label>Nome</label>
-			<input type="text" required ng-model="cnt.vm.entity.name">
-
-			<input type="submit" class="button " value="Salvar">
+			<div class="">
+				<label>Nome</label> <input type="text" required
+					ng-model="cnt.vm.entity.name">
+			</div>
 			
-	<input type="button" class=" button" ng-click="cnt.vm.goList()" value="Voltar">
-		</form>	
+			<div class="">
+				<label>Quantidade</label> <input type="number" min="0" required
+					ng-model="cnt.vm.entity.quantidade">
+			</div>
+			
+			<div class="">
+				<label>Preço</label> <input type="text" required
+					ng-model="cnt.vm.entity.valor">
+			</div>
+
+
+			<input type="submit" class="button " value="Salvar"> <input
+				type="button" class=" button" ng-click="cnt.vm.goList()"
+				value="Voltar">
+		</form>
 	</div>
 </section>

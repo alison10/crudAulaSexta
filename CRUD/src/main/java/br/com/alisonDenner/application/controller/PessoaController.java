@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import br.com.alisonDenner.application.model.Pessoa;
+import br.com.alisonDenner.application.model.Produto;
 import br.com.alisonDenner.application.services.PessoaService;
 
 @Path("pessoa")
@@ -45,7 +45,7 @@ public class PessoaController {
 	}
 
 	@POST
-	public Response insertOrUpdate(Pessoa category) {
+	public Response insertOrUpdate(Produto category) {
 		try {
 			service.insertOrUpdate(category);
 			return Response.ok().build();
@@ -57,7 +57,7 @@ public class PessoaController {
 	}
 
 	@DELETE
-	public Response delete(Pessoa category) {
+	public Response delete(Produto category) {
 		try {
 			service.delete(category);
 			return Response.ok().build();

@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import br.com.alisonDenner.application.model.Pessoa;
+import br.com.alisonDenner.application.model.Produto;
 import br.com.alisonDenner.application.repository.PessoaRepository;
 
 public class PessoaService {
@@ -12,20 +12,20 @@ public class PessoaService {
 	@Inject
 	PessoaRepository repository;
 
-	public List<Pessoa> loadAll() {
+	public List<Produto> loadAll() {
 		return repository.loadAll();
 	}
 
-	public List<Pessoa> loadLikeBy(String name) {
+	public List<Produto> loadLikeBy(String name) {
 		return repository.loadLikeBy(name);
 	}
 
-	public void insertOrUpdate(Pessoa category) {
+	public void insertOrUpdate(Produto category) {
 		repository.save(category);
 
 	}
 
-	public void delete(Pessoa category) {
+	public void delete(Produto category) {
 		repository.delete(category);
 	}
 
