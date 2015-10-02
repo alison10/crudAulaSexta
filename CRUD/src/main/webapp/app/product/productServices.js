@@ -15,7 +15,7 @@
 
 var request = $http({
 				method : "POST",
-				url : 'http://localhost:8081/CRUD/rest/product',
+				url : '/CRUD/rest/product',
 				data : entity,
 				headers : {
 					'Content-Type' : 'application/json'
@@ -32,7 +32,7 @@ var request = $http({
 
 var request = $http({
 				method : "GET",
-				url : 'http://localhost:8081/CRUD/rest/product',
+				url : '/CRUD/rest/product',
 				headers : {
 					'Content-Type' : 'application/json'
 				}
@@ -48,7 +48,7 @@ var request = $http({
 
 var request = $http({
 				method : "DELETE",
-				url : 'http://localhost:8081/CRUD/rest/product',
+				url : '/CRUD/rest/product',
 				data : entity,
 				headers : {
 					'Content-Type' : 'application/json'
@@ -63,7 +63,7 @@ var request = $http({
 
 var request = $http({
 				method : "GET",
-				url : 'http://localhost:8081/CRUD/rest/product/filter/'+name,
+				url : '/CRUD/rest/product/filter/'+name,
 				headers : {
 					'Content-Type' : 'application/json'
 				}
