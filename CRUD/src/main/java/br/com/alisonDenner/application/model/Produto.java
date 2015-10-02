@@ -24,7 +24,7 @@ public class Produto {
 	@Column(name = "dVlProduto")
 	private BigDecimal valor = new BigDecimal(0);
 
-	@Column(name = "sDsProduto;")
+	@Column(name = "sDsProduto")
 	private String name;
 
 	public Long getId() {

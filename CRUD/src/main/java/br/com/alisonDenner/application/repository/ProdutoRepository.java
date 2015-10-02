@@ -9,7 +9,7 @@ import javax.transaction.Transactional;
 
 import br.com.alisonDenner.application.model.Produto;
 
-public class PessoaRepository {
+public class ProdutoRepository {
 
 	@PersistenceContext(name = "default")
 	private EntityManager manager;

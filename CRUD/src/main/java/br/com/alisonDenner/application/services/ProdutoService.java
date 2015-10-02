@@ -5,12 +5,12 @@ import java.util.List;
 import javax.inject.Inject;
 
 import br.com.alisonDenner.application.model.Produto;
-import br.com.alisonDenner.application.repository.PessoaRepository;
+import br.com.alisonDenner.application.repository.ProdutoRepository;
 
-public class PessoaService {
+public class ProdutoService {
 
 	@Inject
-	PessoaRepository repository;
+	ProdutoRepository repository;
 
 	public List<Produto> loadAll() {
 		return repository.loadAll();

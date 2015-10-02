@@ -12,14 +12,14 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
 import br.com.alisonDenner.application.model.Produto;
-import br.com.alisonDenner.application.services.PessoaService;
+import br.com.alisonDenner.application.services.ProdutoService;
 
-@Path("pessoa")
+@Path("product")
 @Produces(value = MediaType.APPLICATION_JSON)
-public class PessoaController {
+public class ProdutoController {
 
 	@Inject
-	PessoaService service;
+	ProdutoService service;
 
 	@GET
 	public Response get() {
