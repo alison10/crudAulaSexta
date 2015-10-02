@@ -1,8 +1,8 @@
 (function() {
     
-	angular.module('personServices', []).service("personServices", personServices);   
+	angular.module('productServices', []).service("productServices", productServices);   
 
-    function personServices($http, $q, $location){
+    function productServices($http, $q, $location){
         return ({
 			load : _load,
 			loadBy : _loadBy,
@@ -15,7 +15,7 @@
 
 var request = $http({
 				method : "POST",
-				url : '/crud/rest/pessoa',
+				url : 'http://localhost:8081/CRUD/rest/product',
 				data : entity,
 				headers : {
 					'Content-Type' : 'application/json'
@@ -32,7 +32,7 @@ var request = $http({
 
 var request = $http({
 				method : "GET",
-				url : '/crud/rest/pessoa',
+				url : 'http://localhost:8081/CRUD/rest/product',
 				headers : {
 					'Content-Type' : 'application/json'
 				}
@@ -48,7 +48,7 @@ var request = $http({
 
 var request = $http({
 				method : "DELETE",
-				url : '/crud/rest/pessoa',
+				url : 'http://localhost:8081/CRUD/rest/product',
 				data : entity,
 				headers : {
 					'Content-Type' : 'application/json'
@@ -63,7 +63,7 @@ var request = $http({
 
 var request = $http({
 				method : "GET",
-				url : '/crud/rest/pessoa/filter/'+name,
+				url : 'http://localhost:8081/CRUD/rest/product/filter/'+name,
 				headers : {
 					'Content-Type' : 'application/json'
 				}

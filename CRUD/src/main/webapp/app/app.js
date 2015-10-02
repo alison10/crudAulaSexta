@@ -1,5 +1,5 @@
 (function() {
-angular.module('crud', [ 'ngRoute','personConfig' ] );
+angular.module('crud', [ 'ngRoute','productConfig' ] );
 
 
 	

@@ -1,9 +1,9 @@
 (function() {
 
 
-	angular.module('personListController',[ ]).controller('personListController', personListController);
+	angular.module('productListController',[ ]).controller('productListController', productListController);
 
-    function personListController($rootScope,$scope,personServices,$location){
+    function productListController($rootScope,$scope,productServices,$location){
         
         var vm = {};
         this.vm = vm;
@@ -12,7 +12,7 @@
         vm.edit = edit;
         vm.goForm =goForm;
 
-		personServices.load().then(successLoad,failLoad);
+		productServices.load().then(successLoad,failLoad);
 
 		
 		function goForm(item){
@@ -27,14 +27,14 @@
 
 
 function remove(item){
-	personServices.remove(item).then(successRemove,failOnRemoveLoad);
+	productServices.remove(item).then(successRemove,failOnRemoveLoad);
 }
 
 	function filter(){
 		if(vm.serachValue  == '' || vm.serachValue  == null)
-		personServices.load().then(successLoad,failLoad);
+		productServices.load().then(successLoad,failLoad);
 			else
-		personServices.loadBy(vm.serachValue ).then(successLoad,failLoad);
+		productServices.loadBy(vm.serachValue ).then(successLoad,failLoad);
 	}
 
 
@@ -48,7 +48,7 @@ function failOnRemoveLoad(cause){
 }
 
 function successLoad(response){
-	vm.persons = response;
+	vm.products = response;
 }
 
 function failLoad(cause){
